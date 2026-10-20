@@ -1,0 +1,21 @@
+# 依赖
+node_modules/
+
+# Python
+__pycache__/
+venv/
+.venv/
+
+# 环境变量与密钥
+.env
+.env.*
+*.pem
+*.key
+
+# 运行时
+*.log
+tmp/
+profile/
+
+# 系统
+.DS_Store

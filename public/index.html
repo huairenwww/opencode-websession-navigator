@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OpenCode Session Navigator</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <aside id="navigator">
+        <header>
+          <div>
+            <p>OpenCode</p>
+            <h1>Session navigator</h1>
+          </div>
+          <button id="refresh" title="刷新">↻</button>
+        </header>
+
+        <label>
+          <span>Session</span>
+          <select id="sessions"></select>
+        </label>
+
+        <input id="search" type="search" placeholder="搜索用户消息" aria-label="搜索用户消息" />
+        <div id="summary"><span id="count">0</span> user messages</div>
+        <nav id="messages" aria-label="用户消息"></nav>
+        <p id="status">正在连接 OpenCode...</p>
+      </aside>
+
+      <section id="workspace">
+        <div id="toolbar">
+          <span id="current">请选择 Session</span>
+          <a id="open" target="_blank" rel="noreferrer">在新标签页打开 ↗</a>
+        </div>
+        <iframe id="opencode" title="OpenCode Web"></iframe>
+      </section>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
